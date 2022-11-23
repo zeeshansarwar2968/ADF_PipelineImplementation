@@ -1,0 +1,60 @@
+{
+	"name": "ParamDatasetOut1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "paramoutputsql1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "item_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "category",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "old_price",
+				"type": "varchar"
+			},
+			{
+				"name": "sellable_online",
+				"type": "varchar"
+			},
+			{
+				"name": "other_colors",
+				"type": "varchar"
+			},
+			{
+				"name": "short_desc",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,13 @@
+{
+	"name": "AzureSqlLK001",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDBLK001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

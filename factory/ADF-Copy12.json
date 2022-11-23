@@ -1,0 +1,14 @@
+{
+	"name": "ADF-Copy12",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d90b57c-c3e3-4d7d-adcb-1c4e55cf28a9",
+		"tenantId": "77547edd-7f49-41ed-b186-81c549078e3f"
+	}
+}
